@@ -1,0 +1,15 @@
+{
+  "name": "site-redesign-marketplace",
+  "owner": { "name": "Juleykhan Ibrahimov" },
+  "metadata": {
+    "description": "Плагины Claude для редизайна сайтов"
+  },
+  "plugins": [
+    {
+      "name": "site-redesign",
+      "source": "./plugins/site-redesign",
+      "description": "Редизайн существующего сайта с сохранением структуры страниц и логики: концепт-макеты с артами Magnific, затем код главной и всего сайта со сверкой по макету.",
+      "version": "0.2.0"
+    }
+  ]
+}
