@@ -14,7 +14,7 @@
 В Claude Code то же самое командами:
 
 ```
-/plugin marketplace add <github-логин>/site-redesign-marketplace
+/plugin marketplace add Dzhuleikhan/site-redesign-marketplace
 /plugin install site-redesign@site-redesign-marketplace
 ```
 
