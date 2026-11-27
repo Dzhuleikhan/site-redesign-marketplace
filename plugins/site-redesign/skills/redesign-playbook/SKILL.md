@@ -1,7 +1,7 @@
 ---
 name: redesign-playbook
 description: >
-  This skill should be used by the redesign-concept, redesign-home, redesign-site and
+  This skill should be used by the redesign-concept, redesign-figma, redesign-code and
   redesign-autopilot skills, and whenever the user asks to "redesign the site", "make a
   new design that keeps the structure", "сделать редизайн", "переделать дизайн сайта",
   "сделать макет редизайна" or to check a redesign against its mockup. Holds the shared
@@ -9,14 +9,14 @@ description: >
   reference sites and the current design, Magnific art, the token layer, and the
   mockup-vs-site verification loop.
 metadata:
-  version: "0.2.0"
+  version: "0.5.0"
 ---
 
 # Плейбук редизайна
 
 Общие правила для всех шагов редизайна. Каждый шаг читает отсюда только нужные файлы.
 
-## Три закона редизайна
+## Четыре закона редизайна
 
 1. **Структура и логика неприкосновенны.** Те же страницы, те же блоки в том же порядке,
    те же данные, сценарии, тексты, ключи i18n, роуты, модалки и состояния. Меняется только
@@ -26,7 +26,9 @@ metadata:
    пользователя (сайты и папки проектов) И от текущего дизайна самого проекта. Проверка — по чек-листу в
    `references/originality.md`. Перекрасить текущие карточки и кнопки — главная ошибка, на
    которой процесс уже сломался однажды.
-3. **Готово = совпадает с макетом.** Код не считается готовым, пока каждый блок не сверен с
+3. **Сначала дизайн, потом код.** Порядок всегда: концепт → весь сайт в Figma → код. Ни одна
+   страница, включая главную, не верстается без утверждённого фрейма (`references/figma-pipeline.md`).
+4. **Готово = совпадает с макетом.** Код не считается готовым, пока каждый блок не сверен с
    макетом по скриншотам на 1440 и 375, в тёмной и светлой теме (`references/verification.md`).
    Нашёл расхождение — чинить, а не описывать. Не смог — честно назвать в отчёте.
 
@@ -40,6 +42,7 @@ metadata:
 | `references/magnific.md` | Перед генерацией маскота, артов, иконок |
 | `references/implementation.md` | Перед правкой кода |
 | `references/verification.md` | После правки каждого блока и перед отчётом |
+| `references/figma-pipeline.md` | Шаги `redesign-figma` и `redesign-code`: агенты, ревью, экономия, ночной режим |
 | `references/lessons.md` | Один раз в начале любого шага: известные ловушки |
 
 Код пишется по правилам навыка `project-rules` и правилам самого репозитория — прочитать до первой правки.

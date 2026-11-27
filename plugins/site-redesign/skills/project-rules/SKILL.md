@@ -6,7 +6,7 @@ description: >
   find and apply the repository's own coding rules and the limits Claude keeps in the
   user's repository (git, package managers, generated files, reporting).
 metadata:
-  version: "0.2.0"
+  version: "0.5.0"
 ---
 
 # Правила проекта

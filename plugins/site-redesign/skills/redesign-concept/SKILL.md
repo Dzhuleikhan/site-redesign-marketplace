@@ -9,7 +9,7 @@ description: >
   light, with mascot and art from Magnific) on a design canvas while keeping the site's
   page structure and logic.
 metadata:
-  version: "0.2.0"
+  version: "0.5.0"
 ---
 
 # Концепт редизайна
@@ -49,5 +49,5 @@ metadata:
 Код не трогать на этом шаге совсем.
 
 Когда пользователь выбрал («делаем вариант 2», «берём этот») — записать выбор в
-`.redesign/STATE.md` и предложить следующий шаг одной строкой: «Пишу код главной?»
-(навык `redesign-home`).
+`.redesign/STATE.md` и предложить следующий шаг одной строкой: «Рисую весь сайт в Figma?»
+(навык `redesign-figma`).
